@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+:root{
+    --primary-color: #036ffc;
+    --primary-dark-color: #0259c9;
+    --dark-color: #666;
+    --dark-darker-color: #333;
+    --danger-color: #ed1b24;
+    --danger-dark-color: #d61820;
+    --warning-color: #ffb300;
+    --warning-dark-color: #e6a202;
+    --light-color: #efefef;
+    --light-dark-color: #ccc;
+    --success-color: #2bd965;
+    --success-dark-color: #26c95d;
+    --transition-btn: ease .2s background-color;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    padding: 0.5rem 0.7rem;
+    border: none;
+    outline: none;
+    border-radius: .65rem;
+    cursor: pointer;
+}
+.btn-primary{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.btn-primary:hover{
+    background-color: var(--primary-dark-color);
+    transition: var(--transition-btn);
+}
+.btn-dark{
+    background-color: var(--dark-color);
+    color: #fff;
+}
+.btn-dark:hover{
+    background-color: var(--dark-darker-color);
+    transition: var(--transition-btn);
+}
+.btn-danger{
+    background-color: var(--danger-color);
+    color: #fff;
+}
+.btn-danger:hover{
+    background-color: var(--danger-dark-color);
+    transition: var(--transition-btn);
+}
+.btn-warning{
+    background-color: var(--warning-color);
+    color: #fff;
+}
+.btn-warning:hover{
+    background-color: var(--warning-dark-color);
+    transition: var(--transition-btn);
+}
+.btn-light{
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+.btn-light:hover{
+    background-color: var(--light-dark-color);
+    transition: var(--transition-btn);
+}
+.btn-success{
+    background-color: var(--success-color);
+    color: #fff;
+}
+.btn-success:hover{
+    background-color: var(--success-dark-color);
+    transition: var(--transition-btn);
+}
